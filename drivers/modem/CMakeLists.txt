@@ -12,3 +12,8 @@ if(CONFIG_MODEM_WNCM14A2A)
 	zephyr_library_include_directories(${ZEPHYR_BASE}/subsys/net/ip)
 	zephyr_library_sources(wncm14a2a.c)
 endif()
+
+if(CONFIG_MODEM_UBLOX_SARA_N2)
+	zephyr_library_include_directories(${ZEPHYR_BASE}/subsys/net/ip)
+	zephyr_library_sources(ublox-sara-n2.c)
+endif()

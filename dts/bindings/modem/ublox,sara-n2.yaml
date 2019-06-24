@@ -1,0 +1,22 @@
+#
+# Copyright (c) 2019, Telenor Digital AS
+#
+# SPDX-License-Identifier: Apache-2.0
+#
+
+title: u-Blox SARA-N2 modem
+version: 0.1
+
+description: >
+    This is a representation of the u-Blox SARA-N2 modem.
+
+inherits:
+    !include uart-device.yaml
+
+properties:
+    compatible:
+      constraint: "ublox,sara-n2"
+
+    label:
+      category: required
+
