@@ -1,0 +1,12 @@
+/* SPDX-License-Identifier: Apache-2.0 */
+
+&uart1 {
+	current-speed = <9600>;
+	status = "okay";
+
+	sara_n2 {
+		compatible = "ublox,sara-n2";
+		label = "ublox-sara-n2";
+		status = "okay";
+	};
+};
